@@ -1,0 +1,185 @@
+doctype doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		link(rel="stylesheet", href="/css/mobile.css")
+		link(rel="stylesheet", href="/css/tablet.css" media="(min-width: 700px)")
+		link(rel="stylesheet" href="/css/desktop.css" media="(min-width: 1200px)")
+		link(rel="stylesheet", href="/assets/fonts/style.css")
+		link(rel="shortcut icon", href="/assets/icons/logof.png", type="image/x-icon")
+		title bustosjeiner
+	body
+		header.header
+			.container-logo 
+				a.icon-logo(href="#main-section")
+					i: img(src="/assets/icons/logo.svg", alt="logo Jeiner Bustos")  
+			
+			nav.nav-bar(id="burger-menu")
+				ul 
+					li: a.active(href="#main-section") Home
+					li: a(href="#aboutMe-section") About me 
+					li: a(href="#skills-section") Skills  
+					li: a(href="#projects-section") Projects
+					li: a(href="#contactMe-section") Contact me
+
+			span.button-menu(onclick="showmenu()") 
+				i.icon-bgr-menu(id="icon-menu")
+
+		section.main-section(id="main-section")  
+			.main-section-container
+				h1.main-text.main-title Hi! #[br] I'm Jeiner Bustos 
+				figure: img(src="/assets/images/profileImage.png", alt="Jeiner profile image")
+				h2.main-text.main-subtitle Full Stack Developer
+		
+		main
+			.container 
+				section.aboutMe-section(id="aboutMe-section")
+					h3 Who is Jeiner?
+					figure: img.aboutMe-illustration(src="/assets/icons/business-illustration.svg", alt="Two persons speaking")
+					.aboutMe-description
+						p 
+							| I’m a Full Stack developer passionate about 
+							| learning and improving my skills constantly. 
+							| I have experience building websites and web 
+							| applications implementing modern technologies 
+							| and good practices. 
+						br
+						p 
+							| am always looking fot ways to grow personally 
+							| and professionally, participating in 
+							| communities that never stop learning.
+						br
+						p
+							| If you want to go fast, go alone. 
+							| If you want to go far, go together. 
+							| “African proverb”.
+					a.button(href="https://drive.google.com/drive/folders/1J28n6d2RpPAoIoOryzlSeT8IOs8QHsaJ?usp=sharing" target="_blank" rel="noopener noreferrer")  
+						i.icon-download
+						| Download CV 
+
+				section.skills-section(id="skills-section")
+					h3 Skills
+					.technologies
+						div 
+							figure: img.technology-image(src="/assets/icons/html5.svg", alt="html5 logo")
+							p HTML 5
+						div 
+							figure: img.technology-image(src="/assets/icons/css3.svg", alt="css3 logo")
+							p CSS 3
+						div 
+							figure: img.technology-image(src="/assets/icons/javascript.svg", alt="javascript logo")
+							p JavaScript
+						div 
+							figure: img.technology-image(src="/assets/icons/git.svg", alt="git logo")
+							p Git
+						div 
+							figure: img.technology-image(src="/assets/icons/github.svg", alt="github logo")
+							p GitHub
+						div 
+							figure: img.technology-image(src="/assets/icons/figma.svg", alt="figma logo")
+							p Figma
+			.triangle-section 
+
+			section.container-projects(id="projects-section")
+				.auxiliar-div
+					.projects-section 
+						h3 Projects
+						.projects 
+							.project 
+								.title-project Tetris game
+								figure: img(src="/assets/images/tetrisGame.png", alt="tetris game image")
+								p
+									| This is a classic video game developed 
+									| with canvas tag of HTML5.   
+								.tags 
+									div HTML5
+									div CSS3
+									div JavaScript
+								.buttons-projects 
+									a.button(href="https://tetrisgamejl.netlify.app/" target="_blank" rel="noopener noreferrer") 
+										i.icon-internet 
+										| Website
+									a.button(href="https://github.com/bustosjeiner/tetrisGame" target="_blank" rel="noopener noreferrer")
+										i.icon-github 
+										| Repository
+							.project 
+								.title-project Hangman game
+								figure: img(src="/assets/images/hangmanGame.png", alt="hangman game image")
+								p
+									| This is a classig game developed 
+									| mainly with JavaScript. 
+								.tags 
+									div HTML5
+									div CSS3
+									div JavaScript
+								.buttons-projects 
+									a.button(href="https://hangmanggame.netlify.app/" target="_blank" rel="noopener noreferrer")
+										i.icon-internet 
+										| Website
+									a.button(href="https://github.com/bustosjeiner/hangmanGame" target="_blank" rel="noopener noreferrer") 
+										i.icon-github 
+										| Repository
+							.project 
+								.title-project Web tribute
+								figure: img(src="/assets/images/theFlashLandingPage.png", alt="the flash image")
+								p 
+									| This is a landig page about The Flash.
+									| It was mainly developed with HTML5, 
+									| CSS3 and some JavaScript.
+								.tags 
+									div HTML5
+									div CSS3
+									div JavaScript
+								.buttons-projects 
+									a.button(href="https://theflashlandingpage.netlify.app/" target="_blank" rel="noopener noreferrer") 
+										i.icon-internet 
+										| Website
+									a.button(href="https://github.com/bustosjeiner/theFlashLandingPage" target="_blank" rel="noopener noreferrer")
+										i.icon-github 
+										| Repository
+
+			section.contactMe-section(id="contactMe-section")
+				.container-contactMe
+					h3 Contact me
+					div.aux-container 
+						figure: img.contactMe-illustration(src="/assets/icons/socialmedia-illustration.svg", alt="a man with sitting with a laptop") 
+						form.contactMe-form(id="form" action="https://formspree.io/f/xqknajbo" method="POST")
+							label.name(for="name")
+								p Type your name: 
+								input.input(name="name" id="name" type="text" placeholder="name" autocomplete="name" required)
+							label.email(for="email")  
+								p Type your email: 
+								input.input(name="email" id="email" type="email" placeholder="example@email.com" autocomplete="name" required) 
+							label.message(for="message")  
+								p Type a message: 
+								textarea.input(name="message" id="message" placeholder="message" required) 
+							button.button(type="submit") 
+								i.icon-send
+								| Send 
+							p.status(id="status")
+		
+		footer
+			.social-networks
+				a(href="https://twitter.com/bustosjeiner" target="_blank" rel="noopener noreferrer")  
+					i.icon-twitter
+					| Twitter
+				a(href="https://www.linkedin.com/in/bustosjeiner/" target="_blank" rel="noopener noreferrer")  
+					i.icon-linkedin
+					| LinkedIn
+				a(href="https://www.facebook.com/bustosjeiner/" target="_blank" rel="noopener noreferrer")  
+					i.icon-facebook
+					| Facebook
+				a(href="https://www.instagram.com/bustosjeiner/" target="_blank" rel="noopener noreferrer")  
+					i.icon-instagram
+					| Instagram
+				a(href="https://www.tiktok.com/@bustosjeiner" target="_blank" rel="noopener noreferrer")  
+					i.icon-tiktok
+					| Tiktok
+			.copy
+				p 
+					| Copyright © 2021. @bustosjeiner #[br] 
+					| All Rights Reserved
+
+		script(src="/script.js")  

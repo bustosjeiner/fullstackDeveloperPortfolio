@@ -1,0 +1,518 @@
+$primary-color: #002BFF;
+$secondary-color: #fff;
+$third-color: #000;
+$transparency: rgba(0, 43, 255, 0.25);
+$shadow-blue: 0px 5px 5px rgba(0, 43, 255, 0.5);
+$shadow-white: 0px 5px 5px rgba(46, 46, 46, 0.5);
+$shadow-projects: 5px 5px 5px rgba(255, 255, 255, 0.5);
+$shadow-form: 0px 5px 5px rgba(46, 46, 46, 0.25);
+$shadow-form-focus: 0px 5px 5px rgba(0, 43, 255, 0.5);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+	color: $third-color;
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+p {
+	font-size: 1.6rem;
+	font-weight: 300;
+	line-height: 2.5rem;
+}
+
+h3 {
+	font-size: 2.2rem;
+	font-weight: bold;
+}
+
+button, .button {
+	height: 30px;
+	place-self: center;
+	margin: 25px 0 50px;
+	padding: 0 10px;
+	grid-area: button;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	font-size: 1.6rem;
+	color: $secondary-color;
+	border-radius: 10px;
+	border-style: none;
+	background-color: $primary-color;
+	box-shadow: $shadow-blue;
+	cursor: pointer;
+	
+	i {
+		font-size: 2rem;
+	}
+}
+
+
+button:hover, .button:hover {
+	color: $primary-color;
+	border: 1px solid $transparency;
+	background-color: $secondary-color;
+	box-shadow: $shadow-white;
+	transition: 0.3s;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	height: 40px;
+	z-index: 20;
+	display: flex;
+	justify-content: space-between;
+	background-color: $secondary-color;
+	transition: top 0.3s;
+	
+	.container-logo {
+		margin-left: 10px;
+
+		.icon-logo, i img {
+			height: 100%;
+		}
+	}
+
+	.nav-bar {
+		position: fixed;
+		width: 100%;
+		height: calc(100% - 40px);
+		z-index: 20;
+		top: 40px;
+		right: -100vw;
+		border-top: 8px solid $transparency;
+		background-color: $transparency;
+		transition: all 0.3s;
+
+		ul {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			gap: 5px;
+
+			li > a {
+				display: block;
+				padding: 9.5px 20px;
+				font-size: 1.6rem;
+				font-weight: 550;
+				text-align: center;
+				background-color: $secondary-color;
+				color: $primary-color;
+				border-bottom: 3px solid $primary-color;
+			}
+
+			li > a:hover {
+				color: $secondary-color;
+				background-color: $primary-color;
+				border-bottom: 3px solid $secondary-color;
+				transition: 0.3s;
+			}
+
+			li > a:active ,a.active	{
+				color: $secondary-color;
+				background-color: $primary-color;
+				border-bottom: 3px solid $secondary-color;
+			}
+		}
+	}
+
+	.button-menu {
+		padding: 10px;
+		font-size: 20px;
+		color: $primary-color;
+		cursor: pointer;
+	}
+
+	.button-menu:hover {
+		background-color: $primary-color;
+		color: $secondary-color;
+		transition: 0.3s;
+	}
+}
+
+.main-section {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background-image: url("/assets/images/mainSection_1920.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+
+	.main-section-container {
+		width: 100%;
+		height: 100%;
+		display: grid;
+		place-content: center;
+		grid-template-areas: 
+			"title"
+			"image"
+			"image"
+			"subtitle";
+		background-color: $transparency;
+
+		.main-text {
+			text-align: center;
+			color: $secondary-color;
+		}
+
+		.main-title {
+			margin: 10px 0;
+			grid-area: title;
+			align-self: end;
+			font-size: 2.8rem;
+			font-weight: 900;
+		}
+
+		figure {
+			width: 250px;
+			grid-area: image;
+			place-self: center;
+
+			img {
+				margin: 50px 0;
+				border-radius: 50%;
+			}
+		}
+		
+		.main-subtitle {
+			margin: 10px 0;
+			grid-area: subtitle;
+			align-self: start;
+			font-size: 2.5rem;
+			font-weight: 600;
+			font-style: italic;
+		}
+	}
+}
+
+main {
+	width: 100%;
+	position: relative;
+
+	.container {
+		width: 90%;
+		position: relative;
+		margin: 40px auto 20px;
+		background-color: $secondary-color;
+
+		.aboutMe-section {
+			width: 100%;
+			display: grid;
+			justify-content: center;
+			grid-template-areas: 
+				"subtitle"
+				"illustration"
+				"description"
+				"button";
+		
+			h3 {
+				padding: 10px 0;
+				grid-area: subtitle;
+			}
+
+			figure {
+				width: 250px;
+				padding: 40px 10px 50px;
+				grid-area: illustration;
+				place-self: center;
+
+				.aboutMe-illustration {
+					width: 100%;
+				}
+			}
+
+			.aboutMe-description {
+				grid-area: description;
+			}
+
+			.button {
+				grid-area: button;
+			}
+		}
+		
+		.skills-section {
+			h3 {
+				padding: 10px 0;
+			}
+			
+			.technologies {
+				padding: 40px 0 10px;
+				display: grid;
+				gap: 10px;
+				grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
+				justify-content: center;
+				justify-items: center;
+		
+				div {
+					figure {
+						.technology-image {
+							height: 100px;
+						}
+					}
+		
+					p {
+						margin: 25px auto;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+
+	.triangle-section  {
+		position: absolute;
+		width: 100%;
+		height: 50px;
+		z-index: 2;
+		background-color: $secondary-color;
+		clip-path: polygon(50% 70%, 0 0, 100% 0);
+	}
+	
+	.container-projects {
+		width: 100%;
+		position: relative;
+		background-image: url("/assets/images/projectsSection_1920.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		clip-path: polygon(100% 0, 100% 97.5%, 50% 100%, 0 97.5%, 0 0);
+
+		.auxiliar-div {
+			width: 100%;
+			padding: 70px 0 100px;
+			background-color: $transparency;
+
+			.projects-section {
+				width: 90%;
+				margin: 0 auto;
+				
+				h3 {
+					padding: 25px 0;
+					color: $secondary-color;
+				}
+
+				.projects {
+					display: grid;
+					gap: 25px;
+					place-items: center;
+					grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+					
+					.project {
+						width: 280px;
+						//align-self: stretch;
+						display: grid;
+						border-radius: 20px;
+						background-color: $secondary-color;
+						box-shadow: $shadow-projects;
+						
+						.title-project {
+							padding: 10px 0;
+							height: 40px;
+							font-size: 1.8rem;
+							font-weight: bold;
+							font-style: italic;
+							text-align: center;
+							color: $secondary-color;
+							border-radius: 20px 20px 0 0;
+							background-color: $third-color;
+						}
+
+						figure {
+							height: 220px;
+							object-fit: contain;
+							img {
+								width: 100%;
+								height: 100%;
+								object-fit:fill
+							}
+						}
+
+						p {
+							margin: 5%;
+							text-align: center;
+						}
+		
+						.tags {
+							display: flex;
+							justify-content: space-around;
+		
+							div {
+								width: 70px;
+								height: 25px;
+								padding: 5px 0;
+								text-align: center;
+								font-size: 1.2rem;
+								font-weight: 300;
+								background-color: $transparency;
+							}
+						}
+		
+						.buttons-projects {
+							display: flex;
+							justify-content: space-around;
+		
+							.button {
+								margin: 25px 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.contactMe-section {
+		width: 90%;
+		position: relative;
+		margin: 50px auto;
+		background-color: $secondary-color;
+
+		.container-contactMe {
+			width: 100%;
+			margin: 0 auto;
+			
+			h3 {
+				grid-area: subtitle;
+				padding: 10px 0;
+			}
+
+			.aux-container {
+				display: flex;
+				flex-direction: column;
+
+				figure {
+					width: 250px;
+					padding: 40px 25px;
+					align-self: center;
+
+					.contactMe-illustration {
+						width: 100%;
+					}
+				}
+			}
+
+			.contactMe-form {
+				display: grid;
+				grid-template-areas: 
+					"name"
+					"email"
+					"message"
+					"button"
+					"status";
+				gap: 15px;
+
+				label {
+					p {
+						margin: 10px 0;
+					}
+
+					.input {
+						width: 97%;
+						padding: 7px 10px;
+						border-radius: 10px;
+						font-size: 1.6rem;
+						border: 1px solid $transparency;
+						box-shadow: $shadow-form;
+						resize: none;
+						outline: none;
+					}
+
+					.input:focus {
+						background-color: $transparency;
+						border: 1px solid $secondary-color;
+						box-shadow: $shadow-form-focus;
+					}
+				}
+
+				.name {
+					grid-area: name;
+				}
+
+				.email {
+					grid-area: email;
+				}
+
+				.message {
+					grid-area: message;
+
+					textarea {
+						height: 70px;
+					}
+				}
+
+				button {
+					margin-bottom: 0;
+					grid-area: button;
+				}
+
+				.status {
+					margin-top: 10px;
+					text-align: center;
+					grid-area: status;
+				}
+			}
+		}
+	}
+}
+
+footer {
+	width: 100%;
+	height: 150px;
+	padding-top: 35px;
+	background-color: $third-color;
+
+	.social-networks {
+		display: grid;
+		grid-template-columns: repeat(5, 60px);
+		gap: 10px;
+		justify-content: center;
+
+		a {
+			padding: 5px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			font-size: 1.4rem;
+			color: $secondary-color;
+
+			i {
+				padding: 5px;
+				font-size: 3rem;
+			}
+		}
+
+		a:hover {
+			color: rgba(255, 255, 255, 0.5);
+			transition: 0.3s;
+		}
+	}	
+
+	.copy {
+		margin-top: 25px;
+		p {
+			font-size: 1rem;
+			line-height: 1rem;
+			text-align: center;
+			color: $secondary-color;
+		}
+	}
+}
+
