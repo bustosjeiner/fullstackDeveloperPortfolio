@@ -41,13 +41,13 @@ h3 {
 }
 
 button, .button {
-	height: 30px;
+	height: 40px;
 	place-self: center;
 	margin: 25px 0 50px;
 	padding: 0 10px;
 	grid-area: button;
 	display: flex;
-	gap: 10px;
+	gap: 13px;
 	align-items: center;
 	font-size: 1.6rem;
 	color: $secondary-color;
@@ -79,6 +79,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	background-color: $secondary-color;
+	box-shadow: $shadow-form;
 	transition: top 0.3s;
 	
 	.container-logo {
@@ -215,6 +216,7 @@ main {
 
 		.aboutMe-section {
 			width: 100%;
+			padding-top: 50px;
 			display: grid;
 			justify-content: center;
 			grid-template-areas: 
@@ -249,6 +251,8 @@ main {
 		}
 		
 		.skills-section {
+			padding-top: 50px;
+
 			h3 {
 				padding: 10px 0;
 			}
@@ -297,7 +301,7 @@ main {
 
 		.auxiliar-div {
 			width: 100%;
-			padding: 70px 0 100px;
+			padding: 50px 0 100px;
 			background-color: $transparency;
 
 			.projects-section {
@@ -305,19 +309,19 @@ main {
 				margin: 0 auto;
 				
 				h3 {
-					padding: 25px 0;
+					padding: 25px 0 50px;
 					color: $secondary-color;
 				}
 
 				.projects {
 					display: grid;
 					gap: 25px;
-					place-items: center;
+					justify-items: center;
+					align-items: start;
 					grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 					
 					.project {
 						width: 280px;
-						//align-self: stretch;
 						display: grid;
 						border-radius: 20px;
 						background-color: $secondary-color;
@@ -386,6 +390,7 @@ main {
 		background-color: $secondary-color;
 
 		.container-contactMe {
+			padding-top: 50px;
 			width: 100%;
 			margin: 0 auto;
 			
