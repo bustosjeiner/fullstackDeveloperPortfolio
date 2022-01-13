@@ -42,7 +42,7 @@ main .contactMe-section .container-contactMe .aux-container {
           justify-content: center;
 }
 main .contactMe-section .container-contactMe .aux-container .contactMe-form {
-  padding: 20px 25px 0;
+  padding: 40px 25px 0;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
