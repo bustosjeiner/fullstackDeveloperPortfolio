@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'portfolio';
+  src:  url('portfolio.eot?epf03x');
+  src:  url('portfolio.eot?epf03x#iefix') format('embedded-opentype'),
+    url('portfolio.ttf?epf03x') format('truetype'),
+    url('portfolio.woff?epf03x') format('woff'),
+    url('portfolio.svg?epf03x#portfolio') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'portfolio' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-github:before {
+  content: "\e900";
+}
+.icon-bgr-menu:before {
+  content: "\e901";
+}
+.icon-cancel:before {
+  content: "\e902";
+}
+.icon-download:before {
+  content: "\e903";
+}
+.icon-facebook:before {
+  content: "\e904";
+}
+.icon-instagram:before {
+  content: "\e905";
+}
+.icon-internet:before {
+  content: "\e906";
+}
+.icon-linkedin:before {
+  content: "\e907";
+}
+.icon-send:before {
+  content: "\e908";
+}
+.icon-tiktok:before {
+  content: "\e909";
+}
+.icon-twitter:before {
+  content: "\e90a";
+}

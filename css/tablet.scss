@@ -1,0 +1,60 @@
+.main-section {
+  .main-section-container {
+    .main-title {
+      font-size: 3.5rem;
+    }
+
+    .main-subtitle {
+      font-size: 3rem;
+    } 
+  }  
+}
+
+main {
+  .container {
+    max-width: 1000px;
+    .aboutMe-section {
+      grid-template-areas: 
+        "subtitle subtitle"
+        "illustration description"
+        "button button";
+
+      h3 {
+        grid-area: subtitle;
+        padding: 10px 0;
+      }
+
+      .aboutMe-description {
+        align-self: center;
+      }
+
+      .button {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .container-projects {
+    .auxiliar-div{
+      .projects-section {
+        max-width: 1000px;
+      }
+    }
+  }
+  
+  .contactMe-section{
+    .container-contactMe {
+      max-width: 1000px;
+
+      .aux-container {
+        flex-direction: row;
+        justify-content: center;
+
+        .contactMe-form {
+          padding: 40px 25px 0;
+          flex-grow: 1;
+        }
+      }
+    }
+  }
+}

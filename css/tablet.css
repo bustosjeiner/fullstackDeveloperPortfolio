@@ -1,0 +1,49 @@
+.main-section .main-section-container .main-title {
+  font-size: 3.5rem;
+}
+.main-section .main-section-container .main-subtitle {
+  font-size: 3rem;
+}
+
+main .container {
+  max-width: 1000px;
+}
+main .container .aboutMe-section {
+      grid-template-areas: "subtitle subtitle" "illustration description" "button button";
+}
+main .container .aboutMe-section h3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: subtitle;
+  padding: 10px 0;
+}
+main .container .aboutMe-section .aboutMe-description {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+main .container .aboutMe-section .button {
+  margin-top: 0;
+}
+main .container-projects .auxiliar-div .projects-section {
+  max-width: 1000px;
+}
+main .contactMe-section .container-contactMe {
+  max-width: 1000px;
+}
+main .contactMe-section .container-contactMe .aux-container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main .contactMe-section .container-contactMe .aux-container .contactMe-form {
+  padding: 40px 25px 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}

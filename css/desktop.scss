@@ -1,0 +1,96 @@
+$secondary-color: #fff;
+
+header {
+	.nav-bar {
+		position: static;
+		width: auto;
+		height: 100%;
+		margin-right: 10px;
+		display: inline-flex;
+		background-color: $secondary-color;
+		border: none;
+
+		ul {
+			height: 100%;
+			display: flex;
+			flex-direction: row;
+			gap: 0;
+		}
+	}
+
+	.button-menu {
+		display: none;
+	}
+}
+
+
+.main-section {
+	.main-section-container {
+		grid-template-areas: 
+			"image title"
+			"image subtitle";
+
+		.main-title {
+			margin: 10px 50px;
+			font-size: 6rem;
+		}
+
+		figure {
+			margin: 50px;
+		}
+		
+		.main-subtitle {
+			margin: 10px 50px;
+			font-size: 5rem;
+		}
+	}	
+}
+
+
+main {
+	.container {
+		max-width: 1200px;
+
+		.aboutMe-section {
+			figure {
+				padding-top: 50px ;
+			}
+
+			.aboutMe-description {
+				margin: 50px;
+			}
+		}
+	}
+		
+
+  .container-projects {
+    .auxiliar-div{
+      .projects-section {
+        max-width: 1200px;
+      }
+    }
+  }
+	
+	.contactMe-section{
+    .container-contactMe {
+      max-width: 1200px;
+
+      .aux-container {
+        .contactMe-form {
+					padding: 40px 50px 0;
+					grid-template-areas: 
+						"name email"
+						"message message"
+						"button button"
+						"status status";
+
+					.message {
+						textarea {
+							width: 98.5%;
+						}
+					}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/css/mobile.css"/>
+    <link rel="stylesheet" href="/css/tablet.css" media="(min-width: 700px)"/>
+    <link rel="stylesheet" href="/css/desktop.css" media="(min-width: 1200px)"/>
+    <link rel="stylesheet" href="/assets/fonts/style.css"/>
+    <link rel="shortcut icon" href="/assets/icons/logof.png" type="image/x-icon"/>
+    <title>bustosjeiner</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-logo"> <a class="icon-logo" href="#main-section"><i><img src="/assets/icons/logo.svg" alt="logo Jeiner Bustos"/></i></a></div>
+      <nav class="nav-bar" id="burger-menu">
+        <ul> 
+          <li><a class="active" href="#main-section">Home</a></li>
+          <li><a href="#aboutMe-section">About me </a></li>
+          <li><a href="#skills-section">Skills  </a></li>
+          <li><a href="#projects-section">Projects</a></li>
+          <li><a href="#contactMe-section">Contact me</a></li>
+        </ul>
+      </nav><span class="button-menu" onclick="showmenu()"> <i class="icon-bgr-menu" id="icon-menu"></i></span>
+    </header>
+    <section class="main-section" id="main-section"> 
+      <div class="main-section-container">
+        <h1 class="main-text main-title">Hi! <br/> I'm Jeiner Bustos </h1>
+        <figure><img src="/assets/images/profileImage.png" alt="Jeiner profile image"/></figure>
+        <h2 class="main-text main-subtitle">Full Stack Developer</h2>
+      </div>
+    </section>
+    <main>
+      <div class="container"> 
+        <section class="aboutMe-section" id="aboutMe-section">
+          <h3>Who is Jeiner?</h3>
+          <figure><img class="aboutMe-illustration" src="/assets/icons/business-illustration.svg" alt="Two persons speaking"/></figure>
+          <div class="aboutMe-description">
+            <p>
+               I’m a Full Stack developer passionate about 
+              learning and improving my skills constantly. 
+              I have experience building websites and web 
+              applications implementing modern technologies 
+              and good practices. 
+            </p><br/>
+            <p>
+               am always looking fot ways to grow personally 
+              and professionally, participating in 
+              communities that never stop learning.
+            </p><br/>
+            <p>
+              If you want to go fast, go alone. 
+              If you want to go far, go together. 
+              “African proverb”.
+            </p>
+          </div><a class="button" href="https://drive.google.com/drive/folders/1J28n6d2RpPAoIoOryzlSeT8IOs8QHsaJ?usp=sharing" target="_blank" rel="noopener noreferrer"> <i class="icon-download"></i>Download CV </a>
+        </section>
+        <section class="skills-section" id="skills-section">
+          <h3>Skills</h3>
+          <div class="technologies">
+            <div> 
+              <figure><img class="technology-image" src="/assets/icons/html5.svg" alt="html5 logo"/></figure>
+              <p>HTML 5</p>
+            </div>
+            <div> 
+              <figure><img class="technology-image" src="/assets/icons/css3.svg" alt="css3 logo"/></figure>
+              <p>CSS 3</p>
+            </div>
+            <div> 
+              <figure><img class="technology-image" src="/assets/icons/javascript.svg" alt="javascript logo"/></figure>
+              <p>JavaScript</p>
+            </div>
+            <div> 
+              <figure><img class="technology-image" src="/assets/icons/git.svg" alt="git logo"/></figure>
+              <p>Git</p>
+            </div>
+            <div> 
+              <figure><img class="technology-image" src="/assets/icons/github.svg" alt="github logo"/></figure>
+              <p>GitHub</p>
+            </div>
+            <div> 
+              <figure><img class="technology-image" src="/assets/icons/figma.svg" alt="figma logo"/></figure>
+              <p>Figma</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="triangle-section"> </div>
+      <section class="container-projects" id="projects-section">
+        <div class="auxiliar-div">
+          <div class="projects-section"> 
+            <h3>Projects</h3>
+            <div class="projects"> 
+              <div class="project"> 
+                <div class="title-project">Tetris game</div>
+                <figure><img src="/assets/images/tetrisGame.png" alt="tetris game image"/></figure>
+                <p>
+                  This is a classic video game developed 
+                  with canvas tag of HTML5.   
+                </p>
+                <div class="tags"> 
+                  <div>HTML5</div>
+                  <div>CSS3</div>
+                  <div>JavaScript</div>
+                </div>
+                <div class="buttons-projects"> <a class="button" href="https://tetrisgamejl.netlify.app/" target="_blank" rel="noopener noreferrer"> <i class="icon-internet"> </i>Website</a><a class="button" href="https://github.com/bustosjeiner/tetrisGame" target="_blank" rel="noopener noreferrer"><i class="icon-github"> </i>Repository</a></div>
+              </div>
+              <div class="project"> 
+                <div class="title-project">Hangman game</div>
+                <figure><img src="/assets/images/hangmanGame.png" alt="hangman game image"/></figure>
+                <p>
+                  This is a classig game developed 
+                  mainly with JavaScript. 
+                </p>
+                <div class="tags"> 
+                  <div>HTML5</div>
+                  <div>CSS3</div>
+                  <div>JavaScript</div>
+                </div>
+                <div class="buttons-projects"> <a class="button" href="https://hangmanggame.netlify.app/" target="_blank" rel="noopener noreferrer"><i class="icon-internet"> </i>Website</a><a class="button" href="https://github.com/bustosjeiner/hangmanGame" target="_blank" rel="noopener noreferrer"> <i class="icon-github"> </i>Repository</a></div>
+              </div>
+              <div class="project"> 
+                <div class="title-project">Web tribute</div>
+                <figure><img src="/assets/images/theFlashLandingPage.png" alt="the flash image"/></figure>
+                <p>
+                   This is a landig page about The Flash.
+                  It was mainly developed with HTML5, 
+                  CSS3 and some JavaScript.
+                </p>
+                <div class="tags"> 
+                  <div>HTML5</div>
+                  <div>CSS3</div>
+                  <div>JavaScript</div>
+                </div>
+                <div class="buttons-projects"> <a class="button" href="https://theflashlandingpage.netlify.app/" target="_blank" rel="noopener noreferrer"> <i class="icon-internet"> </i>Website</a><a class="button" href="https://github.com/bustosjeiner/theFlashLandingPage" target="_blank" rel="noopener noreferrer"><i class="icon-github"> </i>Repository</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contactMe-section" id="contactMe-section">
+        <div class="container-contactMe">
+          <h3>Contact me</h3>
+          <div class="aux-container"> 
+            <figure><img class="contactMe-illustration" src="/assets/icons/socialmedia-illustration.svg" alt="a man with sitting with a laptop"/></figure>
+            <form class="contactMe-form" id="form" action="https://formspree.io/f/xqknajbo" method="POST">
+              <label class="name" for="name">
+                <p>Type your name: </p>
+                <input class="input" name="name" id="name" type="text" placeholder="name" autocomplete="name" required="required"/>
+              </label>
+              <label class="email" for="email"> 
+                <p>Type your email: </p>
+                <input class="input" name="email" id="email" type="email" placeholder="example@email.com" autocomplete="name" required="required"/>
+              </label>
+              <label class="message" for="message"> 
+                <p>Type a message: </p>
+                <textarea class="input" name="message" id="message" placeholder="message" required="required"> </textarea>
+              </label>
+              <button class="button" type="submit"> <i class="icon-send"></i>Send </button>
+              <p class="status" id="status"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="social-networks"><a href="https://twitter.com/bustosjeiner" target="_blank" rel="noopener noreferrer"> <i class="icon-twitter"></i>Twitter</a><a href="https://www.linkedin.com/in/bustosjeiner/" target="_blank" rel="noopener noreferrer"> <i class="icon-linkedin"></i>LinkedIn</a><a href="https://www.facebook.com/bustosjeiner/" target="_blank" rel="noopener noreferrer"> <i class="icon-facebook"></i>Facebook</a><a href="https://www.instagram.com/bustosjeiner/" target="_blank" rel="noopener noreferrer"> <i class="icon-instagram"></i>Instagram</a><a href="https://www.tiktok.com/@bustosjeiner" target="_blank" rel="noopener noreferrer"> <i class="icon-tiktok"></i>Tiktok</a></div>
+      <div class="copy">
+        <p>
+           Copyright © 2021. @bustosjeiner <br/> 
+          All Rights Reserved
+        </p>
+      </div>
+    </footer>
+    <script src="/script.js"> </script>
+  </body>
+</html>
