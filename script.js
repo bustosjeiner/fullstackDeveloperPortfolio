@@ -3,20 +3,6 @@ let mainPosition = window.pageYOffset;
 const $nav = document.querySelector(".header");
 const form = document.querySelector('#form');
 
-/*window.addEventListener("scroll", () => {
-  let actualMovement = window.pageYOffset;
-
-  if(mainPosition >= actualMovement) {
-      $nav.style.top = "0px";
-      $nav.style.boxShadow = "0px 5px 5px rgba(46, 46, 46, 0.25)";
-  } 
-  else {
-      $nav.style.top = "-40px";
-      $nav.style.boxShadow = "none";
-  }
-  mainPosition = actualMovement;
-});*/
-
 function showmenu() {
   if(auxVar) {
     document.querySelector('.nav-bar').style.right = "0";
